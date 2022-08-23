@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font: 12px/1.5em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+form {
+    display: block;
+    margin: 2em auto;
+    width: 50%;
+    margin-bottom: 5px;
+    border: 3px solid green;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+label input, label textarea {
+    width: 50%;
+    margin-bottom: 5px;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 5px;
+    border: 3px solid green;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: limegreen;
+    color: black;
+}
+

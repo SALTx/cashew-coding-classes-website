@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include("./partials/head.ejs");%>
+<body>
+    <%-include("./partials/header.ejs");%>
+    <h1>Admin page</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Delete</th>
+        </tr>
+        <% for(let i = 0; i < queries.length; i++) { %>
+        <tr>
+            <td><%=queries[i].date%></td>
+            <td><%=queries[i].email%></td>
+            <td><%=queries[i].subject%></td>
+            <td><%=queries[i].message%></td>
+            <td><a href="/admin/delete/<%=queries[i]._id%>">Delete</a></td>
+        </tr>
+        <% } %>
+    </table>
+    <%-include("./partials/footer.ejs");%>
+</body>
+</html>
